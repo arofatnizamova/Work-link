@@ -5,6 +5,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     background: black;
+    color: white;
 }
 a{
     color: inherit;
@@ -22,8 +23,14 @@ a{
 .fs-paragraph{
     font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
 }
+.fs-section-title{
+    font-size: clamp(1.5rem, 0.7188rem + 2.5vw, 2.125rem);
+}
 .text-corp{
     color: var(--color-corp);
+}
+.fw-extrabold{
+    font-weight: 700;
 }
 .btn{
     border-radius: 50px;
@@ -50,6 +57,14 @@ a{
 }
 .w-fit-content{
     width: fit-content;
+}
+.number{
+    font-weight: 700;
+    font-size: 140px;
+    font-family: 'Oswald', sans-serif ;
+    opacity: 0.2;
+    left: 50%;
+    transform: translateX(-50%);
 }
 @media(max-width: 990px){
     .logo{
