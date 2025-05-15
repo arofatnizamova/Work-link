@@ -1,0 +1,59 @@
+:root{
+    --color-corp: #D6F64B;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    color: inherit;
+}
+.nav-link{
+    color: white;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: var(--color-corp);
+}
+.fs-title{
+    font-size: clamp(1.5rem, -1.4688rem + 9.5vw, 3.875rem);
+}
+.fs-paragraph{
+    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+}
+.text-corp{
+    color: var(--color-corp);
+}
+.btn{
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-corp{
+    color: black;
+    background: var(--color-corp);
+}
+.btn-transparent{
+    outline: 1px solid var(--color-corp);
+    color: var(--color-corp);
+}
+.navbar-toggler-icon {
+    background-image: url(icons/burger.svg);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-collapse.collapse.show{
+    background: black;
+}
+@media(max-width: 990px){
+    .logo{
+        width: 200px;
+    }
+}
+@media(max-width:576px){
+    .logo{
+        width: 100px;
+    }
+}
