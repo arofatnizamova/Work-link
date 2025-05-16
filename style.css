@@ -87,24 +87,18 @@ a{
     height: 50px;
 }
 .border-linear{
-     /* Основные стили (подставьте свои) */
-  padding: 20px; /* Внутренний отступ */
-  border-radius: 12px; /* Скругление углов */
-  
-  /* Градиентная "рамка" */
-  border: 1px solid transparent; /* Прозрачная граница */
+  padding: 20px; 
+  border-radius: 12px;
+  border: 1px solid transparent; 
   background: 
     linear-gradient( rgba(0, 0, 0, 0.8)) padding-box,
-     /* Внутренний фон (белый или любой другой) */
     linear-gradient(
-      to bottom right, /* Направление: левый верх → правый низ */
+      to bottom right,
       #D6F64B 0%, 
       #D6F64B 37%, 
       #272727 70%
     ) border-box;
-  
-  /* Дополнительные свойства */
-  background-origin: border-box; /* Важно для корректного отображения */
+  background-origin: border-box; 
   background-repeat: no-repeat;
 }
 .center-light-img{
@@ -204,6 +198,14 @@ a{
     .img-left, .img-right {
         top: -10%;
         width: 40%;
+    }
+    .image-slider .splide__slide {
+        transition: all 0.3s ease;
+        transform: unset;
+    }
+    
+    .image-slider .splide__slide.is-active {
+        transform: unset;
     }
 }
 @media(max-width: 768px){
