@@ -20,11 +20,17 @@ a{
 .fs-title{
     font-size: clamp(1.5rem, -1.4688rem + 9.5vw, 3.875rem);
 }
+.fs-title-2{
+    font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+}
 .fs-paragraph{
     font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
 }
 .fs-section-title{
     font-size: clamp(1.5rem, 0.7188rem + 2.5vw, 2.125rem);
+}
+.fs-span{
+    font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
 }
 .text-corp{
     color: var(--color-corp);
@@ -66,6 +72,59 @@ a{
     left: 50%;
     transform: translateX(-50%);
 }
+.img-left{
+    top: -100%;
+}
+.text-balance{
+    text-wrap: balance;
+}
+.icon-height{
+    height: 50px;
+}
+.border-linear{
+     /* Основные стили (подставьте свои) */
+  padding: 20px; /* Внутренний отступ */
+  border-radius: 12px; /* Скругление углов */
+  
+  /* Градиентная "рамка" */
+  border: 1px solid transparent; /* Прозрачная граница */
+  background: 
+    linear-gradient( rgba(0, 0, 0, 0.8)) padding-box,
+     /* Внутренний фон (белый или любой другой) */
+    linear-gradient(
+      to bottom right, /* Направление: левый верх → правый низ */
+      #D6F64B 0%, 
+      #D6F64B 37%, 
+      #272727 70%
+    ) border-box;
+  
+  /* Дополнительные свойства */
+  background-origin: border-box; /* Важно для корректного отображения */
+  background-repeat: no-repeat;
+}
+.center-light-img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.435);
+    border-radius: 0;
+    color: white;
+    padding-left: 0;
+}
+.form-control:focus {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
 @media(max-width: 990px){
     .logo{
         width: 200px;
@@ -82,5 +141,8 @@ a{
 @media(max-width:576px){
     .logo{
         width: 100px;
+    }
+    .icon-height{
+        height: 35px;
     }
 }
