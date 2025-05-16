@@ -56,4 +56,9 @@ $(document).ready(function() {
     AOS.init({
         duration: 800,
     });
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000,
+        triggerOnce: true
+    });
 });
